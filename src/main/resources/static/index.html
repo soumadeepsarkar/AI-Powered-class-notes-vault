@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Vault 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app-container">
+    <h1> Notes Vault </h1>
+
+    <div id="login-page" class="screen active">
+        <h2>Log in</h2>
+        <form id="login-form">
+            <input type="text" id="student-code" placeholder="Student Code" required>
+            <input type="password" id="password" placeholder="Pass" required>
+            <button type="submit">Login</button>
+            <p id="login-message" class="error"></p>
+        </form>
+    </div>
+
+    <div id="main-page" class="screen hidden">
+        <h2>Main Page</h2>
+        <form id="search-form">
+            <label for="department-select">Department:</label>
+            <select id="department-select" required>
+                <option value="" disabled selected>Select Department</option>
+            </select>
+
+            <label for="course-select">Course name:</label>
+            <select id="course-select" required>
+                <option value="" disabled selected>Select Course</option>
+            </select>
+
+            <label for="semester-select">Semester:</label>
+            <select id="semester-select" required>
+                <option value="" disabled selected>Select Semester</option>
+            </select>
+
+            <button type="submit" id="show-button">Show</button>
+        </form>
+    </div>
+
+    <div id="notes-vault-page" class="screen hidden">
+        <h2>Notes Vault</h2>
+        <div id="notes-list">
+        </div>
+        <button id="download-all-button" class="hidden">Download All Zip</button>
+        <button id="back-button">Back to Search</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

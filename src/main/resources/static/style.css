@@ -1,0 +1,65 @@
+body {
+    font-family : Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ae6df424;
+}
+
+#app-container {
+    background: rgb(131, 120, 238);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(202, 37, 37, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.screen {
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #1f1b2b;
+    color: rgb(236, 235, 241);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1a16eb;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.note-item button {
+    width: auto;
+    padding: 5px 10px;
+    margin: 0;
+    background-color: #007bff;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

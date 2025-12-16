@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="app-container">
-    <h1> Notes Vault </h1>
+        <div class="top-bar">
+            <h1> Notes Vault 🗳️</h1>
+            <div class="buttons">
+                <button class="admin-btn"><i class="fa fa-user-shield"></i> Admin</button>
+                <button class="logout-btn"><i class="fa fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </div>
 
+        <div class="navbar">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+
+ <div id="app-container">
     <div id="login-page" class="screen active">
         <h2>Log in</h2>
         <form id="login-form">

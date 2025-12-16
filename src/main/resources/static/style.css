@@ -1,18 +1,84 @@
-body {
-    font-family : Arial, sans-serif;
-    display: flex;
+ * {
+    box-sizing: border-box;
     justify-content: center;
-    padding: 20px;
-    background-color: #ae6df424;
+    font-weight: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+body {
+    margin: 0;
+    background: #eaedf3;
+    }
+
+    /* Header */
+.top-bar {
+      background: #e9ecef;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f7f2f2;
+    }
+
+.top-bar h1 {
+    color: #3926ed;
+    font-size: 35px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Buttons */
+.buttons button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.admin-btn {
+    background: #5f77d7; /* green */
+}
+
+.logout-btn {
+    background: #007bff; /* blue */
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #5b80ec;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.navbar ul li {
+    margin-right: 95px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 #app-container {
-    background: rgb(131, 120, 238);
-    padding: 30px;
+    background:white;
+    padding: 45px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(202, 37, 37, 0.1);
+    box-shadow: 0 4px 8px rgba(245, 241, 241, 0.1);
     width: 350px;
     text-align: center;
+    margin: 10px auto;
+
 }
 
 .screen {
@@ -34,7 +100,10 @@ input, select, button {
 }
 
 button {
-    background-color: #1f1b2b;
+    background-color: #5b80ec;
+    border-radius: 100px;
+    width: 80px;
+    padding: 7px;
     color: rgb(236, 235, 241);
     cursor: pointer;
     font-weight: bold;
